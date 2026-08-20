@@ -14,6 +14,7 @@ from chatbot import RuleBasedAIChatbot
 
 
 class TestRuleBasedAIChatbot(unittest.TestCase):
+    # Initialize chatbot instance once for the entire test suite
     @classmethod
     def setUpClass(cls):
         cls.bot = RuleBasedAIChatbot()
