@@ -10,6 +10,7 @@ Powered by DecodeLabs Architecture Principles:
 
 import sys
 import re
+# DecodeLabs AI Engine - Deterministic Rule-Based Chatbot Core
 from typing import Dict, Tuple, Optional
 from data_engine import DataEngine
 
