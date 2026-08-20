@@ -16,7 +16,7 @@ class DataEngine:
         self.file_path = file_path
         self.df: Optional[pd.DataFrame] = None
         
-        # O(1) Index lookup tables
+        # O(1) In-Memory Index Lookup Tables for High-Speed Retrieval
         self.orders_by_id: Dict[str, Dict[str, Any]] = {}
         self.orders_by_tracking: Dict[str, Dict[str, Any]] = {}
         self.products: Dict[str, Dict[str, Any]] = {}
