@@ -71,6 +71,7 @@ class RuleBasedAIChatbot:
             return ""
         return raw_input.lower().strip()
 
+    # Business Intelligence & Analytics Dispatch Handlers
     def handle_sales_summary(self) -> str:
         """Generates executive sales and revenue metrics response."""
         m = self.data_engine.get_metrics()
