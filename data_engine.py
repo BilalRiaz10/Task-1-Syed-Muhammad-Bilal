@@ -55,7 +55,8 @@ class DataEngine:
             self.orders_by_id[str(row["OrderID"]).strip().lower()] = order_data
             self.orders_by_tracking[str(row["TrackingNumber"]).strip().lower()] = order_data
 
-        # 2. Build Product Performance and Pricing Index
+        # 2. Build Product Performance and Pricing Index (Aggregated Metrics)
+        # Aggregates total orders, units sold, revenue, and pricing range per product
         prod_grp = self.df.groupby("Product").agg(
             total_orders=("OrderID", "count"),
             total_units=("Quantity", "sum"),
