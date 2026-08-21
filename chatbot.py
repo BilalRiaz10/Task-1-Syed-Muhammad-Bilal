@@ -62,6 +62,7 @@ class RuleBasedAIChatbot:
             "Type 'help' to see all available commands, order queries, or product lookups."
         )
 
+    # Phase 1: Input Preprocessing & Normalization Pipeline
     def sanitize_input(self, raw_input: str) -> str:
         """
         Phase 1: Input & Sanitization (IPO Model)
